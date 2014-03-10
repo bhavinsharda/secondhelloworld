@@ -14,8 +14,8 @@ app.configure(function() {
 
 
 // Add basic route
-app.get('/hello', function(req, res) {
-	res.end('Hello world.');
+app.get('/hello/:who?', function(req, res) {
+	res.end('Hello '+(req.params.who || 'world')+'.');
 });
 
 
