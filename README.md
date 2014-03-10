@@ -1,12 +1,8 @@
-node.js-example
+node.js "hello world" -example
 ===============
 
-Simple web server example done with node.js
+Simple "hello world", web server example done in node.js (+express)
 
-1. Install dependecies
-
-    npm install
-    
-2. Run server
-
-    node app.js
+1. Install dependecies with `npm install`
+2. Run server with `node app.js`
+3. View example page in `http://localhost:8080/world` or `http://localhost:8080/world/me`
