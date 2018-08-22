@@ -6,7 +6,7 @@
 
 // Load express
 var express = require('express');
-var args;
+var ARGS;
 
 // Configure express
 var app = express();
