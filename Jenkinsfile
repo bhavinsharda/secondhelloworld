@@ -11,7 +11,6 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                runport
                 bat 'node app.js'
             }
         }  
