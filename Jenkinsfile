@@ -1,8 +1,7 @@
 pipeline {
     agent { 
         any {
-            ENV_VARIABLE
-            args '-p 3000:3000'
+           args '-p 3000:3000'
         }
     }
     stages {
