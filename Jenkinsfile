@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'npm install'
+                bat 'npm start -- on "3000" '
             }
         }
         stage('Deploy') {
