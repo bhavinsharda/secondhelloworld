@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         any {
-            ENV_VARIABLE '-p 3000:3000'
+            ENV_VARIABLE
             args '-p 3000:3000'
         }
     }
