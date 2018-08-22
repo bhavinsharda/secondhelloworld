@@ -1,12 +1,14 @@
-pipeline {
+node {
     agent any
-    environment {
-        runport = '3000'
-      }
-    stages {
+      stages {
         stage('Build') {
             steps {
                 bat 'npm install'
+            }
+        }
+          stage('test') {
+            steps {
+                bat 'npm deploy on --"3000"'
             }
         }
         stage('Deploy') {
