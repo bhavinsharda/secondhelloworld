@@ -1,8 +1,7 @@
 pipeline {
+    env.MYTOOL_VERSION = '3000'
     agent { 
-        any {
-           args '-p 3000:3000'
-        }
+        any 
     }
     stages {
         stage('Build') {
