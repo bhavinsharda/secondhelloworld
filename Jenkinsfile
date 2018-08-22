@@ -1,8 +1,8 @@
 pipeline {
-    env.MYTOOL_VERSION = '3000'
-    agent { 
-        any 
-    }
+    agent any
+    environment {
+        runport = '3000'
+      }
     stages {
         stage('Build') {
             steps {
@@ -11,6 +11,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                runport = '3000'
                 bat 'node app.js'
             }
         }  
