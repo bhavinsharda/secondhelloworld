@@ -6,7 +6,7 @@
 
 // Load express
 var express = require('express');
-
+var runport=8776;
 
 // Configure express
 var app = express();
@@ -22,5 +22,5 @@ app.get('/hello/:who?', function(req, res) {
 
 
 // Everything's ready. Listen.
-app.listen(8776);
+app.listen(runport);
 console.log('Server running at port 8776.');
