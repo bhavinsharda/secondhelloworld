@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         any {
-           ARGS '-p 3000:3000'
+           args '-p 3000:3000'
         }
     }
     stages {
